@@ -1,0 +1,75 @@
+#uptime = shows since how long your system is running and the number of users are currently logged in and also displays load average for 1,5 and 15 minutes intervals.
+
+
+#w = It will displays users currently logged in and their process along-with shows load averages. also shows the login name, tty name, remote host, login time, idle time, JCPU, PCPU, command and processes.
+
+
+#users=Users command displays currently logged in users. This command don’t have other parameters other than help and version.
+
+#who=who command simply return user name, date, time and host information. who command is similar to w command. Unlike w command who doesn’t print what users are doing
+
+#whoami=whoami command print the name of current user. You can also use “who am i” command to display the current user. If you are logged in as a root using sudo command “whoami” command return root as current user.
+
+
+# crontab -l =List schedule jobs for current user with crontab command and -l option.
+
+#ftp, sftp = 
+Putting multiple files in remote host with mput similarly we can do mget to download multiple files from remote host.
+
+# service httpd start
+OR
+# /etc/init.d/httpd start
+
+Free command shows free, total and swap memory information in bytes.
+
+Free with -t options shows total memory used and available to use in bytes.
+
+# top -u tecmint
+
+# lsof -u username = lsof mean List of all open files. Below lsof command list of all opened files by user username
+
+# last = With last command we can watch user’s activity in the system
+
+#uname=To know only system name, you can use uname
+
+#uname -n = To view your network hostname, use ‘-n’ switch with uname command as shown.
+
+To get information about kernel-version, use ‘-v’ switch.
+
+To get the information about your kernel release, use ‘-r’ switch.
+
+
+To print your machine hardware name, use ‘-m’ switch:
+
+
+All this information can be printed at once by running ‘uname -a’ command as shown below.
+
+
+sudo lshw
+
+sudo lshw -short
+
+sudo lshw -html > lshw.html
+
+
+#lscpu
+
+#lsblk	
+
+#lsusb
+
+#lspci
+
+
+Counting number of regular files = ls -l | grep ^- | wc -l
+
+Counting number of directories = ls -l | grep ^d | wc -l
+
+Counting number of symbolic and hard links = ls -l | grep ^l | wc -l
+
+Counting number of block and character files = ls -l /dev | grep ^b | wc -l,  ls -l /dev | grep ^c | wc -l
+
+#cal
+
+
+#date

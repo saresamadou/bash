@@ -1,0 +1,60 @@
+
+BASH bourne again Shell 
+
+Bourne Shell  sh 
+tiswwww.case.edu/php/chet/bash/bashtop.html
+
+
+======================
+
+
+- identify : user (effective, current & login)
+		   groups (effective group, primary group &
+		   supplementary groups)
+
+- umask
+- ulimit
+
+
+=====================Forwards & backwords=================
+sed command
+
+
+
+=======USER ID
+$UID => id of current user 0 for root user
+====== BASH VERSION
+echo $BASH_VERSION;
+
+
+tree -C
+
+====== echo
+
+echo {1..10}
+echo {1..10..2}
+echo {A..Z}
+
+====== Count the number of lines
+ls -l pipe wc -l
+
+
+====== Redirection  of standard  input and standard output 
+
+command arg 1> success.txt 2> error.txt
+
+command arg &> log.txt
+
+command > /dev/null
+
+
+======Search 
+
+
+grep keyword filename
+to enable color result , use  :  grep --color keyword filename  or |||||| export GREP_OPTIONS='--color=auto'
+
+how to use awk command with grep
+
+grep -i keyword filename | awk {'print $12'}
+
